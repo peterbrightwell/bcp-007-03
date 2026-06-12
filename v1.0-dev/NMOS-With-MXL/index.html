@@ -1,0 +1,1264 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AMWA BCP-007-03: NMOS Support for MXL">
+      
+      
+        <meta name="author" content="AMWA">
+      
+      
+      
+        <link rel="prev" href="./..">
+      
+      
+        <link rel="next" href="../images/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.45">
+    
+    
+      
+        <title>AMWA BCP-007-03: NMOS With MXL - BCP-007-03</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.fba56155.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#amwa-bcp-007-03-nmos-with-mxl" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="BCP-007-03" class="md-header__button md-logo" aria-label="BCP-007-03" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BCP-007-03
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AMWA BCP-007-03: NMOS With MXL
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="BCP-007-03" class="md-nav__button md-logo" aria-label="BCP-007-03" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    BCP-007-03
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  README
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  [Work In Progress] AMWA BCP-007-03: NMOS Support for MXL
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  AMWA BCP-007-03: NMOS With MXL
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  AMWA BCP-007-03: NMOS With MXL
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#no_toc" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        {:.no_toc}
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Introduction
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-of-normative-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Use of Normative Language
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Definitions
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mxl-is-04-sources-flows-and-senders" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MXL IS-04 Sources, Flows and Senders
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MXL IS-04 Sources, Flows and Senders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sources
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Flows
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#senders" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Senders
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Senders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transport-file-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Transport file usage
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mxl-is-04-receivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MXL IS-04 Receivers
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mxl-is-05-senders-and-receivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MXL IS-05 Senders and Receivers
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MXL IS-05 Senders and Receivers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transport-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Transport Parameters
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transport Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-resolution-of-mxl_domain_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Automatic resolution of <code>mxl_domain_id</code>
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sender-transport-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sender Transport Parameters
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receiver-transport-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Receiver Transport Parameters
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Receivers
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#senders_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Senders
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mxl-domain-volume-and-identity-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MXL Domain volume and identity mapping
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controllers" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Controllers
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../images/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Images
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Images
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#no_toc" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        {:.no_toc}
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Introduction
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-of-normative-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Use of Normative Language
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Definitions
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mxl-is-04-sources-flows-and-senders" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MXL IS-04 Sources, Flows and Senders
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MXL IS-04 Sources, Flows and Senders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sources
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Flows
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#senders" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Senders
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Senders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transport-file-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Transport file usage
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mxl-is-04-receivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MXL IS-04 Receivers
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mxl-is-05-senders-and-receivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MXL IS-05 Senders and Receivers
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MXL IS-05 Senders and Receivers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transport-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Transport Parameters
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transport Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-resolution-of-mxl_domain_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Automatic resolution of <code>mxl_domain_id</code>
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sender-transport-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sender Transport Parameters
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receiver-transport-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Receiver Transport Parameters
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Receivers
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#senders_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Senders
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mxl-domain-volume-and-identity-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MXL Domain volume and identity mapping
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controllers" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Controllers
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="amwa-bcp-007-03-nmos-with-mxl">AMWA BCP-007-03: NMOS With MXL</h1>
+<h2 id="no_toc">{:.no_toc}</h2>
+<p>{:toc}</p>
+<h2 id="introduction">Introduction</h2>
+<p><a href="https://tech.ebu.ch/dmf/mxl">MXL</a> provides an open and non-proprietary exchange layer within Dynamic Media Facilities.</p>
+<p>This document outlines how MXL enabled media functions can be managed through AMWA <a href="https://specs.amwa.tv/is-04/">IS-04</a> and <a href="https://specs.amwa.tv/is-05/">IS-05</a>.</p>
+<h2 id="use-of-normative-language">Use of Normative Language</h2>
+<p>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in <a href="https://tools.ietf.org/html/rfc2119" title="Key words for use in RFCs">RFC 2119</a>.</p>
+<h2 id="definitions">Definitions</h2>
+<p>The NMOS terms 'Controller', 'Node', 'Source', 'Flow', 'Sender', 'Receiver' are used as defined in the <a href="https://specs.amwa.tv/nmos/main/docs/Glossary.html">NMOS Glossary</a>.</p>
+<h2 id="mxl-is-04-sources-flows-and-senders">MXL IS-04 Sources, Flows and Senders</h2>
+<p>Nodes that encapsulate media functions containing MXL writers MUST expose Source, Flow and Sender resources for each MXL writer in their IS-04 Node API.</p>
+<p>Nodes compliant with this specification MUST implement IS-04 v1.3 or higher.</p>
+<h3 id="sources">Sources</h3>
+<p>An MXL Source resource MUST set the <code>format</code> attribute to a value specified in the <a href="https://specs.amwa.tv/nmos-parameter-registers/branches/main/formats/" title="NMOS Formats">NMOS formats parameter register</a>.</p>
+<p>Examples of Source resources are provided in <a href="https://github.com/AMWA-TV/bcp-007-03/blob/v1.0-dev/examples/">Examples</a>.</p>
+<h3 id="flows">Flows</h3>
+<p>An MXL Flow resource MUST set the <code>format</code> attribute to a value specified in the <a href="https://specs.amwa.tv/nmos-parameter-registers/branches/main/formats/" title="NMOS Formats">NMOS formats parameter register</a>.</p>
+<p>An MXL Flow resource MUST set the <code>media_type</code> attribute to a value specified in the <a href="https://specs.amwa.tv/nmos-parameter-registers/branches/main/media-types/" title="NMOS Media Types">NMOS media types parameter register</a>.</p>
+<p>Typical values used by MXL Flow resources for the <code>media_type</code> attribute include but are not limited to:</p>
+<ul>
+<li><code>video/v210</code></li>
+<li><code>video/v210a</code></li>
+<li><code>audio/float32</code></li>
+<li><code>video/smpte291</code></li>
+</ul>
+<p>Examples of Flow resources are provided in <a href="https://github.com/AMWA-TV/bcp-007-03/blob/v1.0-dev/examples/">Examples</a>.</p>
+<h3 id="senders">Senders</h3>
+<p>An MXL Sender resource MUST set the <code>transport</code> attribute to <code>urn:x-nmos:transport:mxl</code>.</p>
+<p>An MXL Sender resource MUST expose an empty <code>interface_bindings</code> array.</p>
+<p>An example Sender resource is provided in <a href="https://github.com/AMWA-TV/bcp-007-03/blob/v1.0-dev/examples/">Examples</a>.</p>
+<h4 id="transport-file-usage">Transport file usage</h4>
+<p>MXL does not require a transport file.</p>
+<p>The <code>manifest_href</code> attribute of an MXL Sender MUST always be set to <code>null</code>.</p>
+<p>The response for requests against the <code>/transportfile</code> endpoint of an MXL IS-05 Sender MUST always return a 404.</p>
+<h2 id="mxl-is-04-receivers">MXL IS-04 Receivers</h2>
+<p>Nodes that encapsulate media functions containing MXL readers MUST expose a Receiver resource for each MXL reader in their IS-04 Node API.</p>
+<p>An MXL Receiver resource MUST set the <code>transport</code> attribute to <code>urn:x-nmos:transport:mxl</code>.</p>
+<p>An MXL Receiver resource MUST expose an empty <code>interface_bindings</code> array.</p>
+<p>An MXL Receiver resource MUST set the <code>format</code> attribute to a value specified in the <a href="https://specs.amwa.tv/nmos-parameter-registers/branches/main/formats/" title="NMOS Formats">NMOS formats parameter register</a>.</p>
+<p>An MXL Receiver resource MUST set the <code>media_types</code> attribute to at least one value. The values used MUST be specified in the <a href="https://specs.amwa.tv/nmos-parameter-registers/branches/main/media-types/" title="NMOS Media Types">NMOS media types parameter register</a>.</p>
+<p>Typical values used by MXL Receiver resources for the <code>media_types</code> attribute include but are not limited to:</p>
+<ul>
+<li><code>video/v210</code></li>
+<li><code>video/v210a</code></li>
+<li><code>audio/float32</code></li>
+<li><code>video/smpte291</code></li>
+</ul>
+<p>The Receiver MUST express its limitations or preferences regarding the MXL Flows that it supports consuming by declaring Receiver Capabilities in accordance with the <a href="https://specs.amwa.tv/bcp-004-01/" title="AMWA BCP-004-01 NMOS Receiver Capabilities">BCP-004-01</a> specification. The Receiver SHOULD express its capabilities as precisely as possible, to enable a Controller to determine, with high confidence, the Receiver's compatibility with available MXL Flows. It is not always practical for the parameter constraints to enumerate every type of MXL Flow a Receiver can or cannot consume; however, they SHOULD describe as many commonly used operating points as practical, along with any preferences.</p>
+<p>The Receiver MUST use the <code>constraint_sets</code> parameter within the <code>caps</code> object to describe supported combinations of parameters, using the parameter constraints defined in the <a href="https://specs.amwa.tv/nmos-parameter-registers/branches/main/capabilities/">Capabilities Register</a> of the NMOS Parameter Registers. The full details are described in <a href="https://specs.amwa.tv/bcp-004-01/" title="AMWA BCP-004-01 NMOS Receiver Capabilities">BCP-004-01</a> NMOS Receiver Capabilities.</p>
+<p>An example Receiver resource is provided in <a href="https://github.com/AMWA-TV/bcp-007-03/blob/v1.0-dev/examples/">Examples</a>.</p>
+<h2 id="mxl-is-05-senders-and-receivers">MXL IS-05 Senders and Receivers</h2>
+<p>Nodes compliant with this specification MUST implement IS-05 v1.2 or higher.</p>
+<p>Connection Management using IS-05 proceeds in the same manner as for any other transport, using MXL-specific transport parameters defined in <a href="https://github.com/AMWA-TV/bcp-007-03/blob/v1.0-dev/APIs/schemas/sender_transport_params_mxl.json">MXL Sender transport parameters</a> and <a href="https://github.com/AMWA-TV/bcp-007-03/blob/v1.0-dev/APIs/schemas/receiver_transport_params_mxl.json">MXL Receiver transport parameters</a>.</p>
+<p>The <code>mxl_domain_id</code> and <code>mxl_flow_id</code> transport parameters MUST be present in the IS-05 <code>active</code>, <code>staged</code>, and <code>constraints</code> endpoints of an MXL Sender and Receiver.</p>
+<p>MXL Senders and Receivers MUST always use a single set of transport parameters in the transport parameters arrays in both the staged and active endpoints.</p>
+<p>MXL Senders and Receivers MUST always use a single set of constraints in the constraints endpoint array.</p>
+<h3 id="transport-parameters">Transport Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mxl_domain_id</code></td>
+<td>Specifies the MXL Domain ID where the MXL Flow will be located. The Sender and Receiver list allowed values in the <code>constraints</code> endpoint.</td>
+</tr>
+<tr>
+<td><code>mxl_flow_id</code></td>
+<td>Specifies the MXL Flow ID which will be used for the write or read operation. The Sender and Receiver list allowed values in the <code>constraints</code> endpoint.</td>
+</tr>
+</tbody>
+</table>
+<p>Where a value is not yet determined, implementations MUST use <code>null</code>, consistent with <a href="https://specs.amwa.tv/is-05/releases/v1.1.2/docs/APIs_-_Server_Side_Implementation.html#uninitialised-senders-and-receivers" title="IS-05 APIs: Server Side Implementation — Uninitialised Senders and Receivers">IS-05 <em>APIs: Server Side Implementation</em></a>.</p>
+<p><a href="https://specs.amwa.tv/is-05/releases/v1.1.2/docs/APIs_-_Server_Side_Implementation.html#use-of-auto" title="IS-05 APIs: Server Side Implementation — Use of auto">IS-05 <em>APIs: Server Side Implementation</em>, <em>Use of auto</em></a> allows <code>"auto"</code> in <code>/staged</code> so that the Sender or Receiver may select a transport parameter value itself. API implementations MUST NOT list <code>"auto"</code> as an option via the <code>/constraints</code> endpoint.</p>
+<p>Support for <code>"auto"</code> indicates that an implementation supports automatic-selection semantics for that parameter in <code>/staged</code>. It does not guarantee that every staged configuration can be activated.</p>
+<p>A Sender or Receiver MUST reject a request or activation when <code>"auto"</code> (or any supplied parameter value) is used but the Sender or Receiver is not capable of resolving this to a valid concrete value.</p>
+<h4 id="automatic-resolution-of-mxl_domain_id">Automatic resolution of <code>mxl_domain_id</code></h4>
+<p>When <code>mxl_domain_id</code> is staged or activated with <code>"auto"</code>, the Sender or Receiver SHOULD first use any available local or contextual information (for example a single configured MXL Domain) to determine the MXL Domain id.</p>
+<p>If a Receiver cannot determine the MXL Domain ID by such means, it SHOULD enumerate or query all MXL Domains available to the Node and search for an MXL Flow that satisfies the connection by matching the staged <code>mxl_flow_id</code>.</p>
+<h4 id="sender-transport-parameters">Sender Transport Parameters</h4>
+<ul>
+<li><code>mxl_flow_id</code> MUST accept <code>null</code>, including where the MXL Flow is not yet configured. It MUST support <code>"auto"</code> where the Sender resolves the MXL Flow identifier (for example when that ID is provided via configuration or is randomly generated, so a Controller need not supply the identifier when staging or activating). Where <code>"auto"</code> is used and cannot be resolved to a valid value for <code>/active</code> in the current operating context, the Sender MUST reject the request or activation.</li>
+<li><code>mxl_domain_id</code> MUST accept <code>null</code> including where the MXL Domain is unknown a priori in a multi-domain system. It MUST support <code>"auto"</code> where a single MXL Domain applies or the Sender resolves the MXL Domain without a Controller supplied ID. Where <code>"auto"</code> is used and cannot be resolved to a valid value for <code>/active</code> in the current operating context, the Sender MUST reject the request or activation.</li>
+</ul>
+<h4 id="receiver-transport-parameters">Receiver Transport Parameters</h4>
+<ul>
+<li><code>mxl_flow_id</code> MUST accept <code>null</code> for an unconfigured Receiver as the identifier may be unknown until the Receiver has been staged or activated, and MUST NOT accept <code>"auto"</code>.</li>
+<li><code>mxl_domain_id</code> MUST accept <code>null</code> for an unconfigured Receiver and MUST support <code>"auto"</code> where the Receiver is able to automatically determine the Domain. Where <code>"auto"</code> is used and cannot be resolved to a valid value for <code>/active</code> in the current operating context, the Receiver MUST reject the request or activation.</li>
+</ul>
+<p>Note that the <code>mxl_flow_id</code> need not be the same as the ID of the associated IS-04 Flow resource.</p>
+<h3 id="receivers">Receivers</h3>
+<p>A request on the <strong>/staged</strong> endpoint of an MXL IS-05 Receiver is not expected to contain a transport file in the <code>transport_file</code> attribute.</p>
+<p>A successful activation resulting in <code>master_enable</code> becoming <code>true</code> MUST start the MXL read operation.</p>
+<p>A successful activation resulting in <code>master_enable</code> becoming <code>false</code> MUST stop the MXL read operation.</p>
+<h3 id="senders_1">Senders</h3>
+<p>A successful activation resulting in <code>master_enable</code> becoming <code>true</code> MUST start the MXL write operation.</p>
+<p>A successful activation resulting in <code>master_enable</code> becoming <code>false</code> MUST stop the MXL write operation and SHOULD delete the associated MXL Flow from the MXL Domain.</p>
+<h2 id="mxl-domain-volume-and-identity-mapping">MXL Domain volume and identity mapping</h2>
+<p>The base directory where MXL Flows are stored is called an MXL Domain.
+Multiple MXL Domains can co-exist on the same host.<br />
+MXL Domains are mapped to media functions at deployment time through volume mapping.
+This means that the path where an MXL Domain directory is located inside a container could be different from the path where the MXL Domain directory is located on the host.</p>
+<p>Consider the following simple deployment example where we have two mxl-writer media functions and an mxl-reader media function.</p>
+<div class="highlight"><pre><span></span><code>services:
+  writer-media-function-1:
+    image: mxl-writer:latest
+    volumes:
+      - type: bind
+        source: /Volumes/mxl/domain_1
+        target: /domain_1
+  writer-media-function-2:
+    image: mxl-writer:latest
+    volumes:
+      - type: bind
+        source: /Volumes/mxl/domain_2
+        target: /domain_2
+  reader-media-function:
+    image: mxl-reader:latest
+    volumes:
+      - type: bind
+        source: /Volumes/mxl/domain_1
+        target: /domain_a
+        read_only: true
+      - type: bind
+        source: /Volumes/mxl/domain_2
+        target: /domain_b
+        read_only: true
+</code></pre></div>
+<p>Without applying any strong identity to the MXL Domains the reader media function cannot resolve <code>domain_a</code> and <code>domain_b</code> as being the same as <code>domain_1</code> and <code>domain_2</code>.</p>
+<p>All MXL Domains MUST hold a definition json file <code>domain_def.json</code> in their host directory.
+The MXL Domain definition json object MUST respect the <a href="https://github.com/AMWA-TV/bcp-007-03/blob/v1.0-dev/APIs/schemas/mxl_domain_definition.json">MXL Domain definition schema</a> where the following attributes are defined as:</p>
+<ul>
+<li>id - unique identity of the MXL Domain as a UUID</li>
+<li>label - label of the MXL Domain as a string</li>
+<li>description - description of the MXL Domain as a string</li>
+<li>tags - tags object for the MXL Domain</li>
+</ul>
+<p>An example MXL Domain definition is provided in <a href="https://github.com/AMWA-TV/bcp-007-03/blob/v1.0-dev/examples/">Examples</a>.</p>
+<p>It is assumed that media functions will be configured by an orchestrator with the MXL Domain's location on the local filesystem, allowing them to discover available mapped domains, and their identity, by checking the contents of each MXL Domain for the <code>domain_def.json</code> file.
+The identity of each MXL Domain travels with each MXL Domain mapping inside each media function, meaning media functions can resolve MXL Domains to the same identity even when they have been mapped to different local paths inside the media function.</p>
+<p>Given the above deployment example, this is the local path structure inside each of the media functions:</p>
+<p>writer-media-function-1:</p>
+<div class="highlight"><pre><span></span><code>mxl-holder/
+├── domain-01/
+│   ├── domain_def.json
+│   └── 4c02e7c0-ffeb-4595-8673-a265d103123a.mxl-flow/
+│       └── flow_def.json
+</code></pre></div>
+<p>mxl-holder/domain-01/domain_def.json</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1ac254d9-a5eb-475f-a2b6-3d02a5cfbc82&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Red Studio&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MXL Red Studio MXL Domain&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>writer-media-function-2:</p>
+<div class="highlight"><pre><span></span><code>my-mxl-holder/
+├── domain-02/
+│   ├── domain_def.json
+│   └── 3494dc19-22c2-4f00-865b-cdbeee7909f0.mxl-flow/
+│       └── flow_def.json
+</code></pre></div>
+<p>my-mxl-holder/domain-02/domain_def.json</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3310f209-9351-47c0-b9a2-14c59b6a4c23&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Blue Studio&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MXL Blue Studio MXL Domain&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>reader-media-function:</p>
+<div class="highlight"><pre><span></span><code>base-mxl-holder/
+├── domain-a/
+│   ├── domain_def.json
+│   └── 4c02e7c0-ffeb-4595-8673-a265d103123a.mxl-flow/
+│       └── flow_def.json
+├── domain-b/
+│   ├── domain_def.json
+│   └── 3494dc19-22c2-4f00-865b-cdbeee7909f0.mxl-flow/
+│       └── flow_def.json
+</code></pre></div>
+<p>base-mxl-holder/domain-a/domain_def.json</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1ac254d9-a5eb-475f-a2b6-3d02a5cfbc82&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Red Studio&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MXL Red Studio MXL Domain&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>base-mxl-holder/domain-b/domain_def.json</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3310f209-9351-47c0-b9a2-14c59b6a4c23&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Blue Studio&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MXL Blue Studio MXL Domain&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>where <code>/domain-a</code> and <code>/domain-b</code> inside the reader media function resolve to the same identity as <code>/domain-1</code> and <code>/domain-2</code> mapped in the writer media functions.</p>
+<h2 id="controllers">Controllers</h2>
+<p>A Controller MUST be able to discover MXL Senders and MXL Receivers by using the IS-04 Query API.</p>
+<p>A Controller MUST be able to connect an MXL Receiver to an MXL Sender by using the IS-05 Connection API.</p>
+<p>When a Controller makes a request on the <strong>/staged</strong> endpoint of an MXL IS-05 Receiver it MUST NOT provide the <code>transport_file</code> attribute.</p>
+<p>Controllers MUST support the BCP-004-01 Receiver Capabilities mechanism in order to evaluate the MXL Flow compatibility between MXL Senders and MXL Receivers.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="./.." class="md-footer__link md-footer__link--prev" aria-label="Previous: [Work In Progress] AMWA BCP-007-03: NMOS Support for MXL">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                [Work In Progress] AMWA BCP-007-03: NMOS Support for MXL
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../images/" class="md-footer__link md-footer__link--next" aria-label="Next: README">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                README
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Advanced Media Workflow Association
+
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      
+        <script src="../javascripts/mermaid.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
