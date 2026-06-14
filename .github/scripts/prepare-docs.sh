@@ -12,7 +12,8 @@
 #      the landing page), rewriting README's docs/-prefixed and repo-root
 #      links so they resolve from inside docs/.
 #   2. Rewrites any link in docs/*.md that escapes the docs/ tree (i.e. starts
-#      with `../`) to an absolute github.com/.../<ref>/... URL.
+#      with `../`) to an absolute github.com/.../<ref>/... URLR
+#   3. Removes lines relevant to Jekyll ToC processing
 #
 # Intended to run in CI on a fresh checkout; the in-place edits to docs/*.md
 # are not meant to be committed.
@@ -50,12 +51,16 @@ echo "Generated docs/index.md from README.md"
 #
 # Matches Markdown link targets of the form `](../<path>)`. The captured path
 # may contain further `../` segments (collapsed by the URL itself).
+#
+# 3. Remove lines relevant to Jekyll ToC processing
 # ---------------------------------------------------------------------------
 shopt -s nullglob
 for f in docs/*.md; do
     [[ "${f}" == "docs/index.md" ]] && continue
-    sed -i.bak -E "s#\]\(\.\./([^)]+)\)#](${REPO_URL}/\1)#g" "${f}"
-    rm -f "${f}.bak"
+    sed -i -E \
+        -e "s#\]\(\.\./([^)]+)\)#](${REPO_URL}/\1)#g" \
+        -e "/^\{:\.no_toc\}/,/^\{:toc\}/d" \
+        "${f}"
 done
 
-echo "Rewrote ../ links in docs/*.md to ${REPO_URL}/..."
+echo "Rewrote ../ links in docs/*.md to ${REPO_URL}/... and removed any Jekyll ToC processing lines"
